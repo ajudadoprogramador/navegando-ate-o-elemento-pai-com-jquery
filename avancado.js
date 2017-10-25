@@ -1,5 +1,5 @@
 $(function(){
-
+    // Ação quando clicar no botão
     $('button').click(function(){
         // Pega o formulário que está sendo enviado
         var form = $(this).closest('form');
