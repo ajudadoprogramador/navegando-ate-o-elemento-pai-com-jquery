@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>NAVEGANDO ENTRE OS ELEMENTOS</title>
+</head>
+<body>
+
+<form action="fale-conosco.php" method="post" data-mensagem="Obrigado por entrar em contato">
+    <legend>FALE CONOSCO</legend>
+    <input type="text" name="nome" value="" placeholder="Digite seu nome">
+    <input type="text" name="email" value="" placeholder="Digite seu e-mail">
+    <input type="text" name="telefone" value="" placeholder="Digite seu telefone">
+
+    <button>SALVAR</button>
+</form>
+
+<form action="newsletter.php" method="post" data-mensagem="Obrigado por se cadastrar na newsletter">
+    <legend>NEWSLETTER</legend>
+    <input type="text" name="email" value="" placeholder="Digite seu e-mail">
+
+    <button>SALVAR</button>
+</form>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="avancado.js"></script>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    width: calc(100% - 80px);
+    max-width: 400px;
+    border: 1px solid #CCC;
+    padding: 20px;
+    margin: 20px auto;
+}
+form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form input {
+    width: calc(100% - 20px);
+    height: 40px;
+    border: 1px solid #CCC;
+    padding: 0 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+form button {
+    height: 40px;
+    padding: 0 10px;
+    background-color: green;
+    color: #FFF;
+    border-radius: 3px;
+}
+
+</style>
+</body>
+</html>
